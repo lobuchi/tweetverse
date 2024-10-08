@@ -6,7 +6,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Security
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'default-secret-key')
 DEBUG = False
-ALLOWED_HOSTS = ['tweetverse00.vercel.app']
+ALLOWED_HOSTS = ['tweetverse000.vercel.app']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
