@@ -1,1 +1,1 @@
- web: gunicorn tweetverse.wsgi
+web: gunicorn tweetverse.wsgi
