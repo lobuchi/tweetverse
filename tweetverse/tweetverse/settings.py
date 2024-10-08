@@ -5,7 +5,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Security
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'default-secret-key')
-DEBUG = False
+DEBUG = True  # Set to True for development
 ALLOWED_HOSTS = ['tweetverse000.vercel.app']
 
 INSTALLED_APPS = [
@@ -51,12 +51,8 @@ WSGI_APPLICATION = 'tweetverse.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',  # Use PostgreSQL in production
-        'NAME': os.environ.get('DB_NAME'),
-        'USER': os.environ.get('DB_USER'),
-        'PASSWORD': os.environ.get('DB_PASSWORD'),
-        'HOST': os.environ.get('DB_HOST'),
-        'PORT': os.environ.get('DB_PORT', '5432'),
+        'ENGINE': 'django.db.backends.sqlite3',  # Use SQLite for development
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
