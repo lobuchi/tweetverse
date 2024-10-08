@@ -73,3 +73,9 @@ LOGOUT_REDIRECT_URL = '/tweet/'
 
 # Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://localhost:8000',
+    'http://localhost:8000',
+    'https://tweetverse0000.vercel.app',
+]
