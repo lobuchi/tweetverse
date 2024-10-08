@@ -1,0 +1,11 @@
+{
+    "build": {
+      "env": {
+        "DJANGO_SECRET_KEY": "y!%zhj3ts9hdfa4ikcs=v$=*3p=5xgk4d_id08i=w$c4$xmzn2u"
+      }
+    },
+    "start": {
+      "command": "python manage.py runserver 0.0.0.0:$PORT"
+    }
+  }
+  
