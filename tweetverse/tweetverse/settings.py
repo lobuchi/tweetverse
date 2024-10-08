@@ -6,7 +6,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Security
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'default-secret-key')
 DEBUG = True  # Set to True for development
-ALLOWED_HOSTS = ['tweetverse000.vercel.app']
+ALLOWED_HOSTS = ['tweetverse000.vercel.app', 'localhost', '127.0.0.1']
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -57,8 +58,8 @@ DATABASES = {
 }
 
 # Static files (CSS, JavaScript, Images)
-# STATIC_URL = '/static/'
-# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 # STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Media files
