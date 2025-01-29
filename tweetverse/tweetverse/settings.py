@@ -6,7 +6,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Security
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'default-secret-key')
 DEBUG = True  # Set to True for development
-ALLOWED_HOSTS = ['*.vercel.app', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['*.vercel.app', 'localhost', '127.0.0.1','your-vercel-app.vercel.app']
 
 
 INSTALLED_APPS = [
